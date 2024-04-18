@@ -5,6 +5,6 @@ services:
       context: .
       args:
         CHANNEL: nightly
-    user: 1000:1000
+    user: ${USER_ID}:${GROUP_ID}
     volumes:
       - ${PWD}:/yt-dlp-downloads
