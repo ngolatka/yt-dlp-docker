@@ -1,0 +1,10 @@
+services:
+  app:
+    image: yt-dlp-docker
+    build:
+      context: .
+      args:
+        CHANNEL: nightly
+    user: 1000:1000
+    volumes:
+      - ${PWD}:/yt-dlp-downloads
