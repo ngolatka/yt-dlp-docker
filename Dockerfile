@@ -10,4 +10,4 @@ RUN cd /bin && \
 
 WORKDIR /yt-dlp-downloads
 
-ENTRYPOINT [ "/bin/yt-dlp" ]
+ENTRYPOINT [ "/bin/yt-dlp", "--no-cache-dir", "--restrict-filenames" ]
