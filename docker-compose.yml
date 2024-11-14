@@ -3,6 +3,7 @@ services:
     image: yt-dlp-docker
     build:
       context: .
+      no_cache: true
       args:
         CHANNEL: nightly
     user: ${USER_ID}:${GROUP_ID}
