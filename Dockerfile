@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ARG CHANNEL
+ARG CHANNEL=nightly
 
 RUN apk add curl ffmpeg python3
 RUN cd /bin && \

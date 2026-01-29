@@ -4,8 +4,6 @@ services:
     build:
       context: .
       no_cache: true
-      args:
-        CHANNEL: nightly
     user: ${USER_ID}:${GROUP_ID}
     volumes:
       - ${PWD}:/yt-dlp-downloads
